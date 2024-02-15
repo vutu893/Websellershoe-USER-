@@ -1,0 +1,99 @@
+.product {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    background-color: var(--white-color);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.08);
+    transition: transform linear 0.1s;
+    will-change: transform;
+    text-decoration: none;
+}
+.product:hover {
+    transform: translateY(-1px);
+    background-color: rgba(101, 98, 98, 0.08);
+    cursor: pointer;
+    border:0.5px #767272 solid;
+}
+.sales_page-title {
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px 0;
+    color: rgb(213, 78, 78);
+}
+.product-img img {
+    /* background-image: url('https://tse4.mm.bing.net/th?id=OIP.gpnRPmJ-LdgDGuXqpXYzrAHaHa&pid=Api&P=0&h=180'); */
+    /* padding-top: 100%; */
+    /* background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; */
+    width: 100%;
+}
+.product-name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #393636;
+    line-height: 1.8rem;
+    height: 3.6rem;
+    margin: 6px 10px 6px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+.product-price {
+    display: flex;
+    align-items: baseline;
+}
+.price-old {
+    font-size: 1.2rem;
+    color: #666666;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+.price-current {
+    font-size: 1.4rem;
+    color: rgb(228, 79, 79);
+    margin-left: 4px;
+}
+.product-sold {
+    color: #121111;
+    padding: 8px;
+    font-size: 1.5rem;
+}
+.product-sales {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 216, 64, 0.9);
+    text-align: center;
+}
+.product-sales::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-width: 0 20px 6px;
+    border-style: solid;
+    border-color: transparent rgba(255, 216, 64, 0.9) transparent rgba(255, 216, 64, 0.9) ;
+}
+.product-sales-off-label {
+    color: red;
+    font-size: 1.1rem;
+    font-weight: 400;
+    position: relative;
+    top: 4px;
+}
+.product-sales-off-percent {
+    color: red;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    position: relative;
+    top: 4px
+}
